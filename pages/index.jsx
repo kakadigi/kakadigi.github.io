@@ -14,7 +14,7 @@ function HomePage() {
         }
         
         main {
-          height: 100vh;
+          height: 80vh;
           width: 60%;
           margin: 0 auto;
           padding: 20px;
