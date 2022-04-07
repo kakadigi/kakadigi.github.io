@@ -1,43 +1,19 @@
-import Head from 'next/head'
-
-function HomePage() {
+import Layout from "@/components/layouts";
+import { Button } from '@chakra-ui/react';
+function HomePage(props) {
   return (
-    <>
-      <Head>
-        <title>Beranda - Karya Kami Digital</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
-      <style jsx>{`
-        body {
-          font-size: 80%;
-          padding: 20px;
-        }
-        
-        main {
-          height: 80vh;
-          width: 60%;
-          margin: 0 auto;
-          padding: 20px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          resize: both;
-          overflow: auto;
-        }
-        main div {
-          width: 50%;
-          padding: 20px;
-          overflow: auto;
-        }
-      `}</style>
-      <main>
-        <div>
-          <h1>Selamat Datang di Kakadigi!</h1>
-          <em>Kami adalah tim pengembang Aplikasi Web dan Mobile Apps</em>
-        </div>
-      </main>
-    </>
-  )
+    <Layout>
+      <Layout.Header {...props} />
+      <h1>Selamat Datang di Kakadigi!</h1>
+    </Layout>
+  );
 }
 
-export default HomePage
+HomePage.getInitialProps = () => {
+  return {
+    title: 'Home',
+    description: 'Karya Kami Digital | IT Consultant based on Purwokerto, Banyumas, Jawa Tengah'
+  }
+}
+
+export default HomePage;
