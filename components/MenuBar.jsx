@@ -1,18 +1,5 @@
-import Link from "next/link";
-import { Stack, Text } from "@chakra-ui/react";
-import { Link as ChakraLink } from "@chakra-ui/react";
-
-const MenuItem = ({ children, to = "/", ...props }) => {
-  return (
-    <Link href={to}>
-      <ChakraLink>
-        <Text display="block" {...props}>
-          {children}
-        </Text>
-      </ChakraLink>
-    </Link>
-  );
-};
+import { Stack } from "@chakra-ui/react";
+import MenuItem from "./MenuItem";
 
 const MenuBar = ({ children }) => {
   return (
