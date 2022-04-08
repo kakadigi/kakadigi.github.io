@@ -1,7 +1,17 @@
 import Layout from "@/components/layouts";
 import NavBar from "@/components/Navbar";
-import { Box, Button, Flex, Heading, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Heading,
+  HStack,
+  Text,
+  useBreakpointValue,
+  VStack
+} from "@chakra-ui/react";
 function HomePage(props) {
+  const sizeH = useBreakpointValue({ md: '4xl', sm: 'lg' });
   return (
     <Layout>
       <Layout.Header {...props} />
@@ -14,15 +24,20 @@ function HomePage(props) {
           <NavBar.Menu.Item to="/about-us">About Us</NavBar.Menu.Item>
         </NavBar.Menu>
         <Box alignContent="end">
-          <Button borderRadius={25} color="white" backgroundColor="black">
+          <Button borderRadius={25} colorScheme="teal">
             Call Us
           </Button>
         </Box>
       </NavBar>
-      <Flex py={20}>
+      <Flex py={[0, 10, 20]} direction={{ base: 'column-reverse', md: 'row' }}>
         <VStack w="full" h="full" p={10} spacing={10} alignItems="self-start">
-          <Heading size="4xl">
-            Building web and mobile app with <u>highest</u> quality.
+          <Heading size={sizeH}>
+            Building web and mobile app
+            <HStack align="self-start" spacing={5}>
+              <Text>with</Text>
+              <Text color="teal"><u>highest</u></Text>
+            </HStack>
+            quality.
           </Heading>
         </VStack>
         <VStack w="full" h="full" p={10} spacing={10} alignItems="self-start">

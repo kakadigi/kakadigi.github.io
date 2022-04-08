@@ -17,6 +17,7 @@ const Header = ({ title, description, children }) => {
         />
         <meta name="description" content={description || ""} />
         <meta name="robots" content="index, follow" />
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
       </Head>
       {children || ""}
     </>

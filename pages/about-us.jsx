@@ -15,7 +15,7 @@ const AboutUs = (props) => {
           <NavBar.Menu.Item to="/about-us">About Us</NavBar.Menu.Item>
         </NavBar.Menu>
         <Box alignContent="end">
-          <Button borderRadius={25} color="white" backgroundColor="black">
+          <Button borderRadius={25} colorScheme="teal">
             Call Us
           </Button>
         </Box>
@@ -38,6 +38,14 @@ const AboutUs = (props) => {
       </VStack>
     </Layout>
   );
+};
+
+AboutUs.getInitialProps = () => {
+  return {
+    title: "About Us",
+    description:
+      "Karya Kami Digital | Our profile company",
+  };
 };
 
 export default AboutUs;
