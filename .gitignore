@@ -109,3 +109,6 @@ dist
 # ignore deployment keys
 gh-pages
 gh-pages.pub
+
+# ignore dir _next
+_next
