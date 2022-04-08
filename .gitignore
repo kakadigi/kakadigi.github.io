@@ -105,3 +105,7 @@ dist
 
 # ignore build files
 /out/**
+
+# ignore env local and production
+.env.local
+.env.production
