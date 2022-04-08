@@ -26,3 +26,10 @@ We'are using prettier, so you can run
 ```
 ./node_modules/prettier/bin-prettier.js --write pages/
 ```
+
+## Deployment
+Run this command to generate Deploy public and secret key
+
+```
+ssh-keygen -t rsa -b 4096 -C "$(git config user.email)" -f gh-pages -N ""
+```
