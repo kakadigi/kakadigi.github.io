@@ -1,43 +1,44 @@
-import Head from 'next/head'
-
-function HomePage() {
+import Layout from "@/components/layouts";
+import NavBar from "@/components/Navbar";
+import { Box, Button, Flex, Heading, VStack } from "@chakra-ui/react";
+function HomePage(props) {
   return (
-    <>
-      <Head>
-        <title>Beranda - Karya Kami Digital</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
-      <style jsx>{`
-        body {
-          font-size: 80%;
-          padding: 20px;
-        }
-        
-        main {
-          height: 80vh;
-          width: 60%;
-          margin: 0 auto;
-          padding: 20px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          resize: both;
-          overflow: auto;
-        }
-        main div {
-          width: 50%;
-          padding: 20px;
-          overflow: auto;
-        }
-      `}</style>
-      <main>
-        <div>
+    <Layout>
+      <Layout.Header {...props} />
+      <NavBar>
+        <Box>
+          <NavBar.Brand text="Kakadigi." fontWeight="bold" />
+        </Box>
+        <NavBar.Menu>
+          <NavBar.Menu.Item>Home</NavBar.Menu.Item>
+          <NavBar.Menu.Item to="/about-us">About Us</NavBar.Menu.Item>
+        </NavBar.Menu>
+        <Box alignContent="end">
+          <Button borderRadius={25} color="white" backgroundColor="black">
+            Call Us
+          </Button>
+        </Box>
+      </NavBar>
+      <Flex py={20}>
+        <VStack w="full" h="full" p={10} spacing={10} alignItems="self-start">
+          <Heading size="4xl">
+            Building web and mobile app with <u>highest</u> quality.
+          </Heading>
+        </VStack>
+        <VStack w="full" h="full" p={10} spacing={10} alignItems="self-start">
           <h1>Selamat Datang di Kakadigi!</h1>
-          <em>Kami adalah tim pengembang Aplikasi Web dan Mobile Apps</em>
-        </div>
-      </main>
-    </>
-  )
+        </VStack>
+      </Flex>
+    </Layout>
+  );
 }
 
-export default HomePage
+HomePage.getInitialProps = () => {
+  return {
+    title: "Home",
+    description:
+      "Karya Kami Digital | IT Consultant based on Purwokerto, Banyumas, Jawa Tengah",
+  };
+};
+
+export default HomePage;
