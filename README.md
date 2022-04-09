@@ -20,7 +20,7 @@ npm run dev
 ```
 
 ## Code Cleaning
-We'are using prettier, so you can run
+We used prettier library, so you can run to clean up the code
 > ./bin-prettier.js --write [dir]
 
 ```
