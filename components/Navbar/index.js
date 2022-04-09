@@ -18,8 +18,7 @@ const NavBar = ({ children, ...props }) => {
       justify="space-between"
       wrap="wrap"
       w="full"
-      mb={8}
-      p={8}
+      p={4}
       {...props}
     >
       {children}
