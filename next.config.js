@@ -7,4 +7,7 @@ module.exports = {
       return `${new Date().getTime()}`;
     }
   },
+  images: {
+    unoptimized: true,
+  },
 };
