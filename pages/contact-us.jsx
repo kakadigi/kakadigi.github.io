@@ -107,6 +107,7 @@ function ContactPage() {
                       alt="X Twitter"
                       width={24}
                       height={24}
+                      unoptimized
                     />
                   </a>
                   <a href="http://" target="_blank" rel="noopener noreferrer">

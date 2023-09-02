@@ -131,6 +131,7 @@ function HomePage() {
                     alt="Our unique offerings"
                     width={600}
                     height={400}
+                    unoptimized
                   />
                   <figcaption>
                     Photo by{" "}

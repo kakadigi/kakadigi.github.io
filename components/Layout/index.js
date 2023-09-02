@@ -27,18 +27,21 @@ const Layout = ({ children, title, description }) => {
           alt="Background blue"
           width={92}
           height={116}
+          unoptimized
         />
         <Image
           src="/images/background-blue-2.svg"
           alt="Background blue"
           width={292}
           height={116}
+          unoptimized
         />
         <Image
           src="/images/background-blue.svg"
           alt="Background blue"
           width={192}
           height={116}
+          unoptimized
         />
       </Flex>
       <Container position="absolute" top={0} maxW="container.xl" pt={16}>

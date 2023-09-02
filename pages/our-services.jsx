@@ -102,6 +102,7 @@ const ServicesPage = () => {
                   alt="Our Services"
                   width={325}
                   height={325}
+                  unoptimized
                 />
                 <figcaption>
                   <a href="https://www.freepik.com/free-vector/isolated-isometric-office-composition-workplace-with-desk-monitor-chair-table-vector-illustration_7201699.htm#query=office%20png&position=9&from_view=search&track=ais">
@@ -137,6 +138,7 @@ const ServicesPage = () => {
                     alt={item.title}
                     width={512}
                     height={345}
+                    unoptimized
                   />
                   <figcaption className={styles.figureCap}>
                     Photo by{" "}
