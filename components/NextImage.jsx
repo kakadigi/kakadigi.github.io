@@ -1,8 +1,5 @@
 import Image from "next/image";
-
-const imageLoader = ({ src, width, quality = 75 }) => {
-  return `${src}?w=${width}&q=${quality}`;
-};
+import { imageLoader } from "./loader";
 
 const NextImage = ({ src, alt, width, height }) => {
   return (

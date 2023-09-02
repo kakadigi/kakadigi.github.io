@@ -9,5 +9,7 @@ module.exports = {
   },
   images: {
     unoptimized: true,
+    loader: "custom",
+    loaderFile: "./components/loader.js",
   },
 };
