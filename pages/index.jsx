@@ -1,128 +1,163 @@
-import Landing from "@/components/Layout/Landing";
 import {
   Box,
   Button,
-  Center,
+  Container,
   Flex,
-  Grid,
-  GridItem,
   Heading,
-  HStack,
-  Image,
-  Input,
-  InputGroup,
-  InputRightAddon,
-  LinkBox,
-  LinkOverlay,
-  SimpleGrid,
-  Stack,
+  List,
+  ListIcon,
+  ListItem,
   Text,
-  useBreakpointValue,
   VStack,
 } from "@chakra-ui/react";
-function HomePage(props) {
-  const sizeH = useBreakpointValue({ base: "xl", md: "4xl", sm: "2xl" });
+import { FaDocker, FaAws, FaLaravel, FaReact } from "react-icons/fa";
+import {
+  SiDjango,
+  SiPostgresql,
+  SiFlutter,
+  SiGithubactions,
+  SiNextdotjs,
+  SiJest,
+  SiAndroid,
+} from "react-icons/si";
+import { Layout, Hero } from "../components";
+import Image from "next/image";
+
+function HomePage() {
   return (
-    <Landing {...props}>
-      <Flex
-        py={[0, 5, 10]}
-        direction={{ base: "column-reverse", md: "row" }}
-        justify="center"
-      >
-        <VStack w="full" h="full" pt={8} spacing={10} alignItems="self-start">
-          <Heading size={sizeH}>
-            Building web and mobile app
-            <HStack align="self-start" spacing={5}>
-              <Text>with</Text>
-              <Text color="primary.500">
-                <u>highest</u>
-              </Text>
-            </HStack>
-            quality.
-          </Heading>
-          <Text colorScheme="gray">
-            Establish your vision and value proposition and turn them into
-            testable prototypes.
-          </Text>
-          <Center w="full">
-            <InputGroup w={{ base: "full", md: "78%" }} size="lg">
-              <Input
-                rounded="full"
-                placeholder="Enter your email"
-                name="email"
-                type="email"
-                borderColor="primary.500"
-                borderWidth={3}
-              />
-              <Button
-                rounded="full"
-                position="absolute"
-                right={0}
-                top={0}
-                zIndex={2}
-                role="button"
-                colorScheme="primary"
-              >
-                Get Started
-              </Button>
-            </InputGroup>
-          </Center>
-          <SimpleGrid columns={3} gap={10} w="full" alignItems="start">
-            <GridItem colSpan={1}>
-              <VStack spacing={2} textAlign="center">
-                <Heading size="lg">75</Heading>
-                <Text fontSize="sm" color="slate.900">
-                  Successfully projects done
-                </Text>
-              </VStack>
-            </GridItem>
-            <GridItem colSpan={1}>
-              <VStack spacing={2} textAlign="center">
-                <Heading size="lg">300K IDR</Heading>
-                <Text fontSize="sm" color="slate.900">Raised via the solutions we&apos;ve built</Text>
-              </VStack>
-            </GridItem>
-            <GridItem colSpan={1}>
-              <VStack spacing={2} textAlign="center">
-                <Heading size="lg">50+</Heading>
-                <Text fontSize="sm" color="slate.900">
-                  Qualified specialists
-                </Text>
-              </VStack>
-            </GridItem>
-          </SimpleGrid>
-        </VStack>
-        <VStack
-          w="full"
-          h="full"
-          pt={{ base: 0, md: 8 }}
-          pl={{ base: 0, md: 8 }}
-          spacing={8}
-          alignItems="self-start"
-        >
-          <Image src="/images/startup.jpeg" alt="Starup builder" w="full" />
-          <LinkBox>
-            <LinkOverlay
-              href="https://www.freepik.com/free-vector/startup-construction-development-3d-thin-line-art-style-design-concept-isometric-illustration_15481135.htm#query=3d%20thinking&position=7&from_view=search"
-              isExternal
-            >
-              <Text fontSize="xs" color="gray.200">
-                Image by : <b>macrovector</b> via freepik.com
-              </Text>
-            </LinkOverlay>
-          </LinkBox>
-        </VStack>
+    <Layout title="Home">
+      <Hero />
+      <Flex gap={8} alignItems="center" justifyContent="center" mb={24}>
+        <Button colorScheme="twitter" variant="solid" size="lg">
+          Get in touch
+        </Button>
+        <Button variant="link" size="lg">
+          Learn more
+        </Button>
       </Flex>
-    </Landing>
+      <Box w="full" bg="slate.200">
+        <Container maxW="container.xl" py={6}>
+          <VStack spacing={6}>
+            <Text size="md" fontWeight={600} color="slate.500">
+              Powering Excellence: Our Trusted Tech Stack
+            </Text>
+            <List display="flex" gap={6}>
+              <ListItem>
+                <ListIcon as={FaDocker} color="slate.500" fontSize="2xl" />
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaAws} color="slate.500" fontSize="2xl" />
+              </ListItem>
+              <ListItem>
+                <ListIcon
+                  as={SiGithubactions}
+                  color="slate.500"
+                  fontSize="2xl"
+                />
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaLaravel} color="slate.500" fontSize="2xl" />
+              </ListItem>
+              <ListItem>
+                <ListIcon as={SiDjango} color="slate.500" fontSize="2xl" />
+              </ListItem>
+              <ListItem>
+                <ListIcon as={SiPostgresql} color="slate.500" fontSize="2xl" />
+              </ListItem>
+              <ListItem>
+                <ListIcon as={SiFlutter} color="slate.500" fontSize="2xl" />
+              </ListItem>
+              <ListItem>
+                <ListIcon as={SiNextdotjs} color="slate.500" fontSize="2xl" />
+              </ListItem>
+              <ListItem>
+                <ListIcon as={FaReact} color="slate.500" fontSize="2xl" />
+              </ListItem>
+              <ListItem>
+                <ListIcon as={SiJest} color="slate.500" fontSize="2xl" />
+              </ListItem>
+              <ListItem>
+                <ListIcon as={SiAndroid} color="slate.500" fontSize="2xl" />
+              </ListItem>
+            </List>
+          </VStack>
+        </Container>
+      </Box>
+      <Box w="full" bg="slate.800" color="slate.100">
+        <Container maxW="container.xl" py={16}>
+          <VStack spacing={8} alignItems="flex-start">
+            <Heading as="h2" size="2xl" color="white">
+              Our Unique Offerings
+            </Heading>
+            <Flex
+              w="full"
+              gap={28}
+              alignItems="center"
+              justifyContent="space-between"
+            >
+              <Box>
+                <List spacing={12}>
+                  <ListItem>
+                    <VStack spacing={3} alignItems="flex-start">
+                      <Heading size="md">Customized Solutions</Heading>
+                      <Text size="md">
+                        Tailored to your needs and focused on providing maximum
+                        value
+                      </Text>
+                    </VStack>
+                  </ListItem>
+                  <ListItem>
+                    <VStack spacing={3} alignItems="flex-start">
+                      <Heading size="md">Dedicated Support</Heading>
+                      <Text size="md">
+                        Our experts are with you every step of the way
+                      </Text>
+                    </VStack>
+                  </ListItem>
+                  <ListItem>
+                    <VStack spacing={3} alignItems="flex-start">
+                      <Heading size="md">Growth-Focused</Heading>
+                      <Text size="md">
+                        Strategies to ensure exponential results
+                      </Text>
+                    </VStack>
+                  </ListItem>
+                </List>
+              </Box>
+              <Box>
+                <figure>
+                  <Image
+                    src="/images/our-unique-values.jpeg"
+                    alt="Our unique offerings"
+                    width={600}
+                    height={400}
+                  />
+                  <figcaption>
+                    Photo by{" "}
+                    <a
+                      href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      charlesdeluvio
+                    </a>{" "}
+                    on{" "}
+                    <a
+                      href="https://unsplash.com/photos/Lks7vei-eAg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Unsplash
+                    </a>
+                  </figcaption>
+                </figure>
+              </Box>
+            </Flex>
+          </VStack>
+        </Container>
+      </Box>
+    </Layout>
   );
 }
-
-HomePage.getInitialProps = () => {
-  return {
-    title: "Home",
-    description:
-      "Karya Kami Digital | IT Consultant based on Purwokerto, Banyumas, Jawa Tengah",
-  };
-};
 
 export default HomePage;
