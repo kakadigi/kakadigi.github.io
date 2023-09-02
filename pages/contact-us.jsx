@@ -20,9 +20,8 @@ import {
 } from "react-icons/fa";
 import { SiToptal, SiUpwork } from "react-icons/si";
 
-import { Layout } from "../components";
+import { Layout, NextImage } from "../components";
 import styles from "../styles.module.scss";
-import Image from "next/image";
 
 function ContactPage() {
   return (
@@ -102,12 +101,11 @@ function ContactPage() {
                     rel="noopener noreferrer"
                     className="x-twitter"
                   >
-                    <Image
+                    <NextImage
                       src="/images/x-twitter.svg"
                       alt="X Twitter"
                       width={24}
                       height={24}
-                      unoptimized
                     />
                   </a>
                   <a href="http://" target="_blank" rel="noopener noreferrer">

@@ -1,6 +1,5 @@
-import Image from "next/image";
 import { Container, Box, Heading, VStack, Flex, Text } from "@chakra-ui/react";
-import { Layout } from "../components";
+import { Layout, NextImage } from "../components";
 import styles from "../styles.module.scss";
 
 const ServicesPage = () => {
@@ -97,12 +96,11 @@ const ServicesPage = () => {
             </Box>
             <Box w="full" textAlign="center">
               <figure>
-                <Image
+                <NextImage
                   src="/images/office-workplace.svg"
                   alt="Our Services"
                   width={325}
                   height={325}
-                  unoptimized
                 />
                 <figcaption>
                   <a href="https://www.freepik.com/free-vector/isolated-isometric-office-composition-workplace-with-desk-monitor-chair-table-vector-illustration_7201699.htm#query=office%20png&position=9&from_view=search&track=ais">
@@ -133,12 +131,11 @@ const ServicesPage = () => {
                 bg="slate.100"
               >
                 <figure>
-                  <Image
+                  <NextImage
                     src={item.image}
                     alt={item.title}
                     width={512}
                     height={345}
-                    unoptimized
                   />
                   <figcaption className={styles.figureCap}>
                     Photo by{" "}

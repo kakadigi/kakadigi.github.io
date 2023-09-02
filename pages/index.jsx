@@ -20,7 +20,7 @@ import {
   SiJest,
   SiAndroid,
 } from "react-icons/si";
-import { Layout, Hero } from "../components";
+import { Layout, Hero, NextImage } from "../components";
 import Image from "next/image";
 
 function HomePage() {
@@ -126,12 +126,11 @@ function HomePage() {
               </Box>
               <Box>
                 <figure>
-                  <Image
+                  <NextImage
                     src="/images/our-unique-values.jpeg"
                     alt="Our unique offerings"
                     width={600}
                     height={400}
-                    unoptimized
                   />
                   <figcaption>
                     Photo by{" "}
