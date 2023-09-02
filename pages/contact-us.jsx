@@ -38,13 +38,14 @@ function ContactPage() {
           <Container maxW="container.xl">
             <VStack spacing={8} mb={24}>
               <Heading as="h1" size="2xl">
-                Let's Connect and Create Together!
+                {"Let's Connect and Create Together!"}
               </Heading>
               <Box w="container.md" textAlign="center">
                 <Text size="md">
-                  At <b>Karya Kami Digital</b>, we're eager to hear from you.
-                  Whether you have a question, a project idea, or simply want to
-                  say hello, our digital doors are always open.
+                  At <b>Karya Kami Digital</b>,
+                  {
+                    " we're eager to hear from you. Whether you have a question, a project idea, or simply want to say hello, our digital doors are always open."
+                  }
                 </Text>
               </Box>
               <Button size="lg" leftIcon={<FaWhatsapp />} colorScheme="emerald">
