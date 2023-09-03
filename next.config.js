@@ -7,9 +7,9 @@ module.exports = {
       return `${new Date().getTime()}`;
     }
   },
-  images: {
-    unoptimized: true,
-    loader: "custom",
-    loaderFile: "./components/loader.js",
-  },
+  // images: {
+  //   unoptimized: true,
+  //   loader: "custom",
+  //   loaderFile: "./components/loader.js",
+  // },
 };
