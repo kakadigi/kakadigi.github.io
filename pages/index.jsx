@@ -21,7 +21,7 @@ import {
   SiAndroid,
 } from "react-icons/si";
 import { Layout, Hero, NextImage } from "../components";
-import Image from "next/image";
+import styles from "../styles.module.scss";
 
 function HomePage() {
   return (
@@ -124,7 +124,7 @@ function HomePage() {
                   </ListItem>
                 </List>
               </Box>
-              <Box>
+              <Box position="relative">
                 <figure>
                   <NextImage
                     src="/images/our-unique-values.jpeg"
@@ -132,7 +132,7 @@ function HomePage() {
                     width={600}
                     height={400}
                   />
-                  <figcaption>
+                  <figcaption className={styles.figureCap}>
                     Photo by{" "}
                     <a
                       href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"

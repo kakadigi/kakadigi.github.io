@@ -94,7 +94,7 @@ const ServicesPage = () => {
                 </Text>
               </VStack>
             </Box>
-            <Box w="full" textAlign="center">
+            <Flex w="full" textAlign="center" justifyContent="center" position="relative">
               <figure>
                 <NextImage
                   src="/images/office-workplace.svg"
@@ -102,14 +102,14 @@ const ServicesPage = () => {
                   width={325}
                   height={325}
                 />
-                <figcaption>
+                <figcaption className={styles.figureCap}>
                   <a href="https://www.freepik.com/free-vector/isolated-isometric-office-composition-workplace-with-desk-monitor-chair-table-vector-illustration_7201699.htm#query=office%20png&position=9&from_view=search&track=ais">
                     Image by macrovector
                   </a>{" "}
                   on Freepik
                 </figcaption>
               </figure>
-            </Box>
+            </Flex>
           </Flex>
         </Container>
       </Box>
