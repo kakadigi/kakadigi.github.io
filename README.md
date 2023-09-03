@@ -1,35 +1,73 @@
-# kakadigi.github.io
-Karya Kami Digital Landing Page
+# Karya Kami Digital Landing Page
 
-## Get started
-1. Clone this repo
-```
-git clone git@github.com:kakadigi/kakadigi.github.io.git
-```
-2. Go to project folder
-```
-cd kakadigi.github.io.git
-```
-4. Install dependencies
-```
-npm install
-```
-5. Run app
-```
+Welcome to the Karya Kami Digital landing page repository. This web page is built with NextJS version 12.x and utilizes the Chakra UI design system version 1.8.x for a sleek and modern design. We also use React icons for the icons, Prettier for code formatting, and Jest for testing.
+
+## Requirements
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js: Make sure you have Node.js installed on your machine. You can download it from [nodejs.org](https://nodejs.org/).
+
+## Installation
+
+Follow these steps to install and set up the project:
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/your-username/karya-kami-digital-landing-page.git
+   ```
+
+2. Change to the project directory:
+
+   ```bash
+   cd karya-kami-digital-landing-page
+   ```
+
+3. Install the project dependencies:
+
+   ```bash
+   npm install
+   ```
+
+## Run App
+
+To run the Karya Kami Digital landing page on your local machine, use the following command:
+
+```bash
 npm run dev
 ```
 
-## Code Cleaning
-We used prettier library, so you can run to clean up the code
-> ./bin-prettier.js --write [dir]
+This will start the development server, and you can access the web page in your browser at `http://localhost:3000`.
 
-```
-./node_modules/prettier/bin-prettier.js --write pages/
-```
+## How to Contribute
 
-## Deployment
-Run this command to generate Deploy public and secret key
+We welcome contributions from the community. To contribute to this project, please follow these steps:
 
-```
-ssh-keygen -t rsa -b 4096 -C "$(git config user.email)" -f gh-pages -N ""
-```
+1. Fork the repository by clicking the "Fork" button on GitHub.
+
+2. Clone your forked repository to your local machine:
+
+   ```bash
+   git clone https://github.com/your-username/karya-kami-digital-landing-page.git
+   ```
+
+3. Create a new branch for your feature or bug fix:
+
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+4. Make your changes and commit them with descriptive commit messages.
+
+5. Push your changes to your forked repository:
+
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+6. Create a Pull Request (PR) on the main repository, explaining the changes you made and why they should be merged.
+
+7. Your PR will be reviewed, and once approved, it will be merged into the main branch.
+
+Thank you for contributing to the Karya Kami Digital landing page!
