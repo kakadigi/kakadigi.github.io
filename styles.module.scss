@@ -1,0 +1,21 @@
+.stayConnect {
+  :global {
+    a {
+      font-size: 24px;
+      &.x-twitter {
+        margin-top: 6px;
+      }
+    }
+  }
+}
+
+.figureCap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  line-height: normal;
+  color: #334155;
+  opacity: 0.1;
+  font-style: italic;
+}

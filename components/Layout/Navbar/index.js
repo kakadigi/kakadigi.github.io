@@ -10,17 +10,9 @@ const Brand = ({ image, text, size, ...props }) =>
     </Heading>
   );
 
-const NavBar = ({ children, ...props }) => {
+const NavBar = ({ children }) => {
   return (
-    <Flex
-      as="nav"
-      align="center"
-      justify="space-between"
-      wrap="wrap"
-      w="full"
-      p={4}
-      {...props}
-    >
+    <Flex as="nav" align="center" justify="space-between" wrap="wrap" w="full">
       {children}
     </Flex>
   );
