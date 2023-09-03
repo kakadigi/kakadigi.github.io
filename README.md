@@ -15,7 +15,7 @@ Follow these steps to install and set up the project:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/karya-kami-digital-landing-page.git
+   git clone git@github.com:kakadigi/kakadigi.github.io.git
    ```
 
 2. Change to the project directory:
