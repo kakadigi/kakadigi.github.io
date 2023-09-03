@@ -15,7 +15,7 @@ const MenuItem = ({ children, to = "/", ...props }) => {
       <Text
         display="block"
         lineHeight="36px"
-        borderBottom={active ? "3px solid #3938B8" : "none"}
+        fontWeight={active ? 700 : 400}
         {...props}
       >
         {children}
