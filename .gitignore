@@ -112,3 +112,6 @@ gh-pages.pub
 
 # ignore dir _next
 _next
+public/images/.DS_Store
+public/.DS_Store
+.DS_Store
