@@ -49,7 +49,7 @@ We welcome contributions from the community. To contribute to this project, plea
 2. Clone your forked repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/karya-kami-digital-landing-page.git
+   git clone git@github.com:kakadigi/kakadigi.github.io.git
    ```
 
 3. Create a new branch for your feature or bug fix:
