@@ -1,6 +1,6 @@
 # Karya Kami Digital Landing Page
 
-Welcome to the Karya Kami Digital landing page repository. This web page is built with NextJS version 12.x and utilizes the Chakra UI design system version 1.8.x for a sleek and modern design. We also use React icons for the icons, Prettier for code formatting, and Jest for testing.
+Welcome to the Karya Kami Digital landing page repository. This web page is built with [NextJS version 13.x](https://nextjs.org/learn/basics/create-nextjs-app) and utilizes the [Chakra UI design system version 2.8.x](https://chakra-ui.com/docs/components) for a sleek and modern design. We also use React icons for the icons, [Prettier](https://prettier.io/) for code formatting, and [Jest](https://jestjs.io/) for testing.
 
 ## Requirements
 
