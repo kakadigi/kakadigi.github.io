@@ -31,7 +31,7 @@
     "@chakra-ui/icons": "^1.1.7",
     "@chakra-ui/react": "^2.8.0",
     "@emotion/react": "^11.9.0",
-    "@emotion/styled": "^11.8.1",
+    "@emotion/styled": "^11.11.0",
     "babel-plugin-styled-components": "^2.0.7",
     "babel-preset-next": "^1.4.0",
     "framer-motion": "^10.2.5",
