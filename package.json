@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/kakadigi/kakadigi.github.io#readme",
   "dependencies": {
-    "@babel/highlight": "^7.17.9",
+    "@babel/highlight": "^7.22.13",
     "@chakra-ui/icons": "^1.1.7",
     "@chakra-ui/react": "^2.8.0",
     "@emotion/react": "^11.9.0",
