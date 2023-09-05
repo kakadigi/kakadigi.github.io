@@ -10,7 +10,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest --watch",
-    "prettier": "prettier --check '*.{js,jsx}'"
+    "prettier": "prettier --check '*.{js,jsx}' './pages/**/*.{js,jsx}' './components/**/*.{js,jsx}'"
   },
   "repository": {
     "type": "git",
