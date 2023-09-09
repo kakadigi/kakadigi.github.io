@@ -1,11 +1,11 @@
-import { Flex, Heading, Image } from "@chakra-ui/react";
-import MenuBar from "./MenuBar";
+import { Flex, Heading, Image } from '@chakra-ui/react';
+import MenuBar from './MenuBar';
 
 const Brand = ({ image, text, size, ...props }) =>
   image ? (
-    <Image w="full" alt={text || "Brand website"} {...props} />
+    <Image w="full" alt={text || 'Brand website'} {...props} />
   ) : (
-    <Heading size={size || "md"} {...props}>
+    <Heading size={size || 'md'} {...props}>
       {text || process.env.NEXT_PUBLIC_APP_NAME}
     </Heading>
   );

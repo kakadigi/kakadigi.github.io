@@ -1,10 +1,9 @@
-import Head from "next/head";
+import Head from 'next/head';
 
 const Header = ({ title, description }) => {
-  const pageTitle = title || "Karya Kami Digital";
+  const pageTitle = title || 'Karya Kami Digital';
   const descriptionText =
-    description ||
-    "Karya Kami Digital | IT Consultant based in Purwokerto, Banyumas, Jawa Tengah";
+    description || 'Karya Kami Digital | IT Consultant based in Purwokerto, Banyumas, Jawa Tengah';
   return (
     <Head>
       <title>{`${process.env.NEXT_PUBLIC_APP_NAME} | ${pageTitle}`}</title>
