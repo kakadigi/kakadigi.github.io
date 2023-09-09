@@ -39,8 +39,8 @@ const NavHeader = () => {
             <NavBar.Menu mb={4}>
               <NavBar.Menu.Item>Home</NavBar.Menu.Item>
               <NavBar.Menu.Item to="/our-services">Services</NavBar.Menu.Item>
-              <NavBar.Menu.Item to="/contact-us">Contact</NavBar.Menu.Item>
               <NavBar.Menu.Item to="/portfolio">Portfolio</NavBar.Menu.Item>
+              <NavBar.Menu.Item to="/contact-us">Contact</NavBar.Menu.Item>
             </NavBar.Menu>
           </Flex>
         </Box>
