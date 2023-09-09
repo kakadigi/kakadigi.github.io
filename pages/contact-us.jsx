@@ -8,7 +8,7 @@ import {
   Heading,
   Text,
   VStack,
-} from "@chakra-ui/react";
+} from '@chakra-ui/react';
 import {
   FaMapMarkedAlt,
   FaGithub,
@@ -17,23 +17,17 @@ import {
   FaDribbble,
   FaBehance,
   FaWhatsapp,
-} from "react-icons/fa";
-import { SiToptal, SiUpwork } from "react-icons/si";
+} from 'react-icons/fa';
+import { SiToptal, SiUpwork } from 'react-icons/si';
 
-import { Layout, NextImage } from "../components";
-import styles from "../styles.module.scss";
+import { Layout, NextImage } from '../components';
+import styles from '../styles.module.scss';
 
 function ContactPage() {
   return (
     <Layout title="Contact Us">
       <Container maxW="container.xl">
-        <Flex
-          w="full"
-          h="full"
-          alignItems="center"
-          justifyContent="center"
-          py={16}
-        >
+        <Flex w="full" h="full" alignItems="center" justifyContent="center" py={16}>
           <Container maxW="container.xl">
             <VStack spacing={8} mb={24}>
               <Heading as="h1" size="2xl">
@@ -52,7 +46,7 @@ function ContactPage() {
               </Button>
             </VStack>
             <Flex
-              direction={{ base: "column", md: "column", lg: "row" }}
+              direction={{ base: 'column', md: 'column', lg: 'row' }}
               w="full"
               h="full"
               justify="space-between"
@@ -65,8 +59,8 @@ function ContactPage() {
                   </Heading>
                   <Divider />
                   <Text fontSize="lg">
-                    If you prefer face-to-face interactions, our doors are open
-                    at our office location:
+                    If you prefer face-to-face interactions, our doors are open at our office
+                    location:
                   </Text>
                 </VStack>
                 <HStack spacing={4} alignItems="flex-start">
@@ -74,8 +68,7 @@ function ContactPage() {
                     <FaMapMarkedAlt />
                   </Text>
                   <Text fontWeight={500} fontSize="md">
-                    Perumahan Permata Perwira Kalimanah Purbalingga, Jawa Tengah
-                    53371
+                    Perumahan Permata Perwira Kalimanah Purbalingga, Jawa Tengah 53371
                   </Text>
                 </HStack>
               </Box>
@@ -86,27 +79,13 @@ function ContactPage() {
                   </Heading>
                   <Divider />
                   <Text fontSize="lg">
-                    Follow us on social media to stay updated on the latest tech
-                    trends, industry insights, and our exciting projects:
+                    Follow us on social media to stay updated on the latest tech trends, industry
+                    insights, and our exciting projects:
                   </Text>
                 </VStack>
-                <HStack
-                  spacing={6}
-                  className={styles.stayConnect}
-                  alignItems="center"
-                >
-                  <a
-                    href="http://"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="x-twitter"
-                  >
-                    <NextImage
-                      src="/images/x-twitter.svg"
-                      alt="X Twitter"
-                      width={24}
-                      height={24}
-                    />
+                <HStack spacing={6} className={styles.stayConnect} alignItems="center">
+                  <a href="http://" target="_blank" rel="noopener noreferrer" className="x-twitter">
+                    <NextImage src="/images/x-twitter.svg" alt="X Twitter" width={24} height={24} />
                   </a>
                   <a href="http://" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin />

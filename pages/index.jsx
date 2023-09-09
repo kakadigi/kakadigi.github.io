@@ -9,8 +9,8 @@ import {
   ListItem,
   Text,
   VStack,
-} from "@chakra-ui/react";
-import { FaDocker, FaAws, FaLaravel, FaReact } from "react-icons/fa";
+} from '@chakra-ui/react';
+import { FaDocker, FaAws, FaLaravel, FaReact } from 'react-icons/fa';
 import {
   SiDjango,
   SiPostgresql,
@@ -19,9 +19,9 @@ import {
   SiNextdotjs,
   SiJest,
   SiAndroid,
-} from "react-icons/si";
-import { Layout, Hero, NextImage } from "../components";
-import styles from "../styles.module.scss";
+} from 'react-icons/si';
+import { Layout, Hero, NextImage } from '../components';
+import styles from '../styles.module.scss';
 
 function HomePage() {
   return (
@@ -49,11 +49,7 @@ function HomePage() {
                 <ListIcon as={FaAws} color="slate.500" fontSize="2xl" />
               </ListItem>
               <ListItem>
-                <ListIcon
-                  as={SiGithubactions}
-                  color="slate.500"
-                  fontSize="2xl"
-                />
+                <ListIcon as={SiGithubactions} color="slate.500" fontSize="2xl" />
               </ListItem>
               <ListItem>
                 <ListIcon as={FaLaravel} color="slate.500" fontSize="2xl" />
@@ -89,37 +85,27 @@ function HomePage() {
             <Heading as="h2" size="2xl" color="white">
               Our Unique Offerings
             </Heading>
-            <Flex
-              w="full"
-              gap={28}
-              alignItems="center"
-              justifyContent="space-between"
-            >
+            <Flex w="full" gap={28} alignItems="center" justifyContent="space-between">
               <Box>
                 <List spacing={12}>
                   <ListItem>
                     <VStack spacing={3} alignItems="flex-start">
                       <Heading size="md">Customized Solutions</Heading>
                       <Text size="md">
-                        Tailored to your needs and focused on providing maximum
-                        value
+                        Tailored to your needs and focused on providing maximum value
                       </Text>
                     </VStack>
                   </ListItem>
                   <ListItem>
                     <VStack spacing={3} alignItems="flex-start">
                       <Heading size="md">Dedicated Support</Heading>
-                      <Text size="md">
-                        Our experts are with you every step of the way
-                      </Text>
+                      <Text size="md">Our experts are with you every step of the way</Text>
                     </VStack>
                   </ListItem>
                   <ListItem>
                     <VStack spacing={3} alignItems="flex-start">
                       <Heading size="md">Growth-Focused</Heading>
-                      <Text size="md">
-                        Strategies to ensure exponential results
-                      </Text>
+                      <Text size="md">Strategies to ensure exponential results</Text>
                     </VStack>
                   </ListItem>
                 </List>
@@ -133,15 +119,15 @@ function HomePage() {
                     height={400}
                   />
                   <figcaption className={styles.figureCap}>
-                    Photo by{" "}
+                    Photo by{' '}
                     <a
                       href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       charlesdeluvio
-                    </a>{" "}
-                    on{" "}
+                    </a>{' '}
+                    on{' '}
                     <a
                       href="https://unsplash.com/photos/Lks7vei-eAg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
                       target="_blank"
