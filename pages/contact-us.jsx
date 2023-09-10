@@ -29,7 +29,7 @@ function ContactPage() {
       <Container maxW="container.xl">
         <Flex w="full" h="full" alignItems="center" justifyContent="center" py={16}>
           <Container maxW="container.xl">
-            <VStack spacing={8} mb={24}>
+            <VStack spacing={8} mb={20}>
               <Heading as="h1" size="2xl">
                 {"Let's Connect and Create Together!"}
               </Heading>
@@ -68,7 +68,7 @@ function ContactPage() {
                     <FaMapMarkedAlt />
                   </Text>
                   <Text fontWeight={500} fontSize="md">
-                    Perumahan Permata Perwira Kalimanah Purbalingga, Jawa Tengah 53371
+                    Permata Perwira Kalimanah Blok F21 Purbalingga, Jawa Tengah 53371
                   </Text>
                 </HStack>
               </Box>

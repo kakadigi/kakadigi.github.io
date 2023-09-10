@@ -1,5 +1,5 @@
-import { Container, Box, Heading, VStack, Flex, Text } from '@chakra-ui/react';
-import { Layout, NextImage } from '../components';
+import { Container, Box, Heading, VStack, Flex, Text, Center } from '@chakra-ui/react';
+import { Layout, NextImage, FeatureAndBenefit } from '../components';
 import styles from '../styles.module.scss';
 
 const ServicesPage = () => {
@@ -145,6 +145,15 @@ const ServicesPage = () => {
           </Flex>
         </Container>
       </VStack>
+
+      <Center w="full" h="xs" bg="slate.800" color="slate.100" px={64}>
+        <Heading as="h1" size="4xl" px={32} textAlign="center">
+          Ready to get blown away?
+        </Heading>
+      </Center>
+      {/* START FEATURE AND BENEFIT SECTION */}
+      <FeatureAndBenefit></FeatureAndBenefit>
+      {/* END FEATIRE AND BENEFIT SECTION */}
     </Layout>
   );
 };
