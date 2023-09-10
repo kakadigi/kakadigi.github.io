@@ -1,0 +1,32 @@
+[
+  {
+    "id": 111,
+    "star": 5,
+    "user": {
+      "id": 21,
+      "name": "dr. Cosmos O. Mangunsong, SpM(K)",
+      "photo": "https://randomuser.me/api/portraits/med/men/30.jpg"
+    },
+    "message": "They delivered a product that was both functional and beautiful, and were a pleasure to work with throughout the process."
+  },
+  {
+    "id": 112,
+    "star": 5,
+    "user": {
+      "id": 22,
+      "name": "Nizam K.",
+      "photo": "https://randomuser.me/api/portraits/men/96.jpg"
+    },
+    "message": "Their team of experts provided the guidance and expertise we needed to succeed in a rapidly changing digital landscape."
+  },
+  {
+    "id": 113,
+    "star": 5,
+    "user": {
+      "id": 23,
+      "name": "Sarah",
+      "photo": "https://randomuser.me/api/portraits/med/women/14.jpg"
+    },
+    "message": "They understood our unique needs and created a plan that was both innovative and effective."
+  }
+]
