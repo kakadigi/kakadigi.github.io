@@ -9,7 +9,7 @@ import {
   List,
   ListItem,
   ListIcon,
-} from "@chakra-ui/react";
+} from '@chakra-ui/react';
 import {
   FaDocker,
   FaAws,
@@ -21,7 +21,7 @@ import {
   FaAccusoft,
   FaAirbnb,
   FaApple,
-} from "react-icons/fa";
+} from 'react-icons/fa';
 import {
   SiDjango,
   SiPostgresql,
@@ -30,24 +30,18 @@ import {
   SiNextdotjs,
   SiJest,
   SiAndroid,
-} from "react-icons/si";
-import { Layout, NextImage, Projects, Testimony } from "../components";
-import styles from "../styles.module.scss";
+} from 'react-icons/si';
+import { Layout, NextImage, Projects, Testimony } from '../components';
+import styles from '../styles.module.scss';
 
 const Portfolio = () => {
   return (
     <Layout title="Portfolio">
       {/* START HERO SECTION */}
-      <Flex
-        w="full"
-        alignItems="center"
-        justifyContent="center"
-        flexDirection="column"
-        gap={4}
-      >
+      <Flex w="full" alignItems="center" justifyContent="center" flexDirection="column" gap={4}>
         <VStack w="container.md" textAlign="center" spacing={8} pt={32} pb={8}>
           <Heading as="h1" size="4xl">
-            It's time to show up!
+            It's time to show off!
           </Heading>
           <Text fontSize="lg">
             Trust me, our teams are very experienced<br></br>
@@ -70,9 +64,8 @@ const Portfolio = () => {
           Behold Our Masterpieces
         </Heading>
         <Text fontSize="lg" w="xl">
-          Welcome to our treasure trove of jaw-dropping works, where we display
-          our unmatched creativity and expertise. Grab some popcorn and enjoy
-          the show!
+          Welcome to our treasure trove of jaw-dropping works, where we display our unmatched
+          creativity and expertise. Grab some popcorn and enjoy the show!
         </Text>
 
         <Flex w="l" gap={8} alignItems="center" justifyContent="space-between">
@@ -110,13 +103,7 @@ const Portfolio = () => {
         bg="slate.800"
         color="slate.100"
       >
-        <VStack
-          w="container.md"
-          textAlign="center"
-          spacing={8}
-          h="md"
-          justifyContent="Center"
-        >
+        <VStack w="container.md" textAlign="center" spacing={8} h="md" justifyContent="Center">
           <Heading as="h1" size="4xl">
             Ready to get blown away ?
           </Heading>
