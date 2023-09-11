@@ -20,7 +20,7 @@ import {
   SiJest,
   SiAndroid,
 } from 'react-icons/si';
-import { Layout, Hero, NextImage } from '../components';
+import { Layout, Hero, NextImage, FeatureAndBenefit, Testimony } from '../components';
 import styles from '../styles.module.scss';
 
 function HomePage() {
@@ -142,6 +142,11 @@ function HomePage() {
           </VStack>
         </Container>
       </Box>
+
+      {/* START FEATURES AND BENEFITS SECTION */}
+      <FeatureAndBenefit></FeatureAndBenefit>
+      <Testimony></Testimony>
+      {/* END FEATURES AND BENEFITS SECTION */}
     </Layout>
   );
 }

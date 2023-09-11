@@ -1,14 +1,4 @@
-import { AtSignIcon } from "@chakra-ui/icons";
-import {
-  Container,
-  VStack,
-  Text,
-  Heading,
-  Grid,
-  GridItem,
-  Icon,
-  Avatar,
-} from "@chakra-ui/react";
+import { Container, VStack, Text, Heading, Grid, GridItem, Avatar } from '@chakra-ui/react';
 
 import {
   FaHandHoldingHeart,
@@ -16,74 +6,39 @@ import {
   FaHatCowboy,
   FaLifeRing,
   FaRegHandshake,
-  FaRegSmileBeam,
   FaRobot,
-} from "react-icons/fa";
+} from 'react-icons/fa';
 const Projects = () => {
   const lists = [
     {
-      name: "Human Capital",
-      description: "Molding talent into masterpieces with advanced HR systems.",
-      avatar: (
-        <Avatar
-          size="md"
-          bg="slate.800"
-          icon={<FaRegHandshake fontSize="1.5rem" />}
-        />
-      ),
+      name: 'Human Capital',
+      description: 'Molding talent into masterpieces with advanced HR systems.',
+      avatar: <Avatar size="md" bg="slate.800" icon={<FaRegHandshake fontSize="1.5rem" />} />,
     },
     {
-      name: "Health",
-      description: "Revolutionizing healthcare management for a better world.",
-      avatar: (
-        <Avatar
-          size="md"
-          bg="slate.800"
-          icon={<FaHandHoldingHeart fontSize="1.5rem" />}
-        />
-      ),
+      name: 'Health',
+      description: 'Revolutionizing healthcare management for a better world.',
+      avatar: <Avatar size="md" bg="slate.800" icon={<FaHandHoldingHeart fontSize="1.5rem" />} />,
     },
     {
-      name: "Accounting",
-      description: "Master the art of numbers with our cutting-edge software.",
-      avatar: (
-        <Avatar
-          size="md"
-          bg="slate.800"
-          icon={<FaHandHoldingUsd fontSize="1.5rem" />}
-        />
-      ),
+      name: 'Accounting',
+      description: 'Master the art of numbers with our cutting-edge software.',
+      avatar: <Avatar size="md" bg="slate.800" icon={<FaHandHoldingUsd fontSize="1.5rem" />} />,
     },
     {
-      name: "Personal Website",
-      description: "Designing your digital home flawlessly and fabulously.",
-      avatar: (
-        <Avatar
-          size="md"
-          bg="slate.800"
-          icon={<FaHatCowboy fontSize="1.5rem" />}
-        />
-      ),
+      name: 'Personal Website',
+      description: 'Designing your digital home flawlessly and fabulously.',
+      avatar: <Avatar size="md" bg="slate.800" icon={<FaHatCowboy fontSize="1.5rem" />} />,
     },
     {
-      name: "CRM",
-      description:
-        "Mastering the chord of customer relationships harmoniously.",
-      avatar: (
-        <Avatar
-          size="md"
-          bg="slate.800"
-          icon={<FaLifeRing fontSize="1.5rem" />}
-        />
-      ),
+      name: 'CRM',
+      description: 'Mastering the chord of customer relationships harmoniously.',
+      avatar: <Avatar size="md" bg="slate.800" icon={<FaLifeRing fontSize="1.5rem" />} />,
     },
     {
-      name: "Customize Solutions",
-      description:
-        "Tailored to your needs and focused on providing maximum value",
-      avatar: (
-        <Avatar size="md" bg="slate.800" icon={<FaRobot fontSize="1.5rem" />} />
-      ),
+      name: 'Customize Solutions',
+      description: 'Tailored to your needs and focused on providing maximum value',
+      avatar: <Avatar size="md" bg="slate.800" icon={<FaRobot fontSize="1.5rem" />} />,
     },
   ];
 
@@ -97,16 +52,15 @@ const Projects = () => {
         <Grid templateColumns="repeat(2, 1fr)" gap={12}>
           <GridItem w="100%">
             <Text>
-              We’re not only dreamers, but achievers too. Our portfolio is
-              filled with extraordinary projects like human capital solutions,
-              health management systems, and personal website development.
+              We’re not only dreamers, but achievers too. Our portfolio is filled with extraordinary
+              projects like human capital solutions, health management systems, and personal website
+              development.
             </Text>
           </GridItem>
           <GridItem w="100%">
             <Text>
-              This is where magic unfolds. From accounting software to customer
-              relationship management, our ingenious solutions have left our
-              clients awestruck.
+              This is where magic unfolds. From accounting software to customer relationship
+              management, our ingenious solutions have left our clients awestruck.
             </Text>
           </GridItem>
         </Grid>
@@ -122,11 +76,11 @@ const Projects = () => {
           <Grid templateColumns="repeat(3, 1fr)" gap={12}>
             {lists.map((item) => (
               <GridItem w="100%" gap={4}>
-                {item["avatar"]}
+                {item['avatar']}
                 <Heading as="h4" size="md" textColor="slate.800" mt={6} mb={2}>
-                  {item["name"]}
+                  {item['name']}
                 </Heading>
-                <Text>{item["description"]}</Text>
+                <Text>{item['description']}</Text>
               </GridItem>
             ))}
           </Grid>
